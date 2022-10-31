@@ -1,7 +1,12 @@
 .encyclopedia {
     float: left;
-    width: 50%;
+    position: relative;
+    left: 40px;
+    width: 44%;
     text-align: center;
+    background-color: lightgoldenrodyellow;
+    margin: 20px;
+    padding: 50px;
 }
 
 .reference {
