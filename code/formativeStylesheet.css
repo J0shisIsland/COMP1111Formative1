@@ -1,0 +1,10 @@
+.encyclopedia {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.reference {
+    font-size: smaller;
+    color: lightgrey;
+}
