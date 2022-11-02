@@ -1,0 +1,160 @@
+<!DOCTYPE html> 
+<html>
+
+<!--This webpage was created as submission for the formative assessment of COMP1111 Module 
+at Durham University, 2022/23-->
+
+    <head>
+        <title>Discover OPM!</title>
+        <meta charset="utf-8"
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <!--Reference for bootstrap links: Bootstrap Team (2022)-->
+
+        <!-- Stylesheet Link-->
+        <link href="formativeStylesheet.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container-fluid p-5 bg-primary text-white">
+            <h1><b>Discover OPM!</b></h1>
+            <p>Mabuhay! This page is an encyclopedia of all your favourite OPM artists.</p>
+        </div>
+        <div class="containter-fluid p-5">
+            <h2>Encyclopedia</h2>
+            <p>
+                "OPM" stands for "Original Pilipino Music". It's what K-Pop is to Korea, except in the Philippines. 
+                OPM emerged around 1970 and has diversified into many different sub-genres. Get an overview of the most popular artists below!<br>
+                <br>
+                <i>Click on the buttons to receive background information about the artists or to see their most popular songs.</i>
+            </p>
+        </div>
+      
+        <!--6 OPM artists with bio and songs-->
+        <!--add search bar?-->
+        <div class="container-fluid p-5">
+        <div class="row">
+            <div class="encyclopedia">
+                <img src="https://i.scdn.co/image/ab67618600001016c195185ab18a517c495c3794" alt="Photo of Sarah Geronimo" width="400"><br>
+                <b>Sarah Geronimo</b><br>
+                <br>
+                <form>
+                    <div class="row">
+                    <div class="col"><button type="button" class="btn btn-primary" onclick="sarahBio()">Biography</button></div>
+                    <div class="col"><button type="button" class="btn btn-primary" onclick="sarahSongs()">Top songs</button></div>
+                    </div>
+                </form><br>
+                    <p id="sarah"></p><br>
+                    <script>
+                        function sarahBio() {
+                            document.getElementById("sarah").innerHTML = "Sarah Geronimo is a Filipino pop-artist and is the biggest music act of her generation. A multi-hyphenate, Sarah is a singer, music recording-artist, ace performer, box-office star actress, TV host and a celebrity endorser.<br> Dubbed as the “Popstar Royalty,” Sarah Geronimo has numerous multi-platinum albums her credit. Her string of successful album releases started from her debut album immediately after winning the 2002 competition “Star For A Night” in 2002 up to her most recent album titled “This 15 Me” (2018).<br> As a pop music artist, Sarah Geronimo (a.k.a. Sarah G.) has numerous recognitions to her credit that includes a dozen Awit Awards (the Philippine equivalent of the Grammys) including Best Album for her 2016 record “The Great Unknown.” 26 MYX Music Award wins (the equivalent of the MTV Music Awards), 8 Aliw Awards for entertainment, an MTV Europe’s World Music Awards for Best Southeast Asian act (2014) and a 2016 Classic Rock and Roll Honour recognition for Best Asian Performer.<br> Sarah Geronimo has since become one of the most influential Filipino music artists and her style has covered a wide range of genres from pop, electro, dance, R&B and pop rock as well as becoming a style icon, total performer and a constant sold-out live concert draw.";
+                        }
+                        function sarahSongs() {
+                            document.getElementById("sarah").innerHTML = "<a href='https://www.youtube.com/watch?v=hvqNU4P_0R4'>1. Maybe This Time</a><br> <a href='https://www.youtube.com/watch?v=XcITAWSWZF0'>2. Isa Pang Araw</a><br> <a href='https://www.youtube.com/watch?v=6vF-_7iBo1c'>3. Duyan</a><br> <a href='https://www.youtube.com/watch?v=ahpmuikko3U'>4. Tala</a><br> <a href='https://www.youtube.com/watch?v=TKIZPNWiMvc'>5. Very Special Love</a>"
+                        }
+                    </script>
+                <p class="reference">- Source: <a href="https://open.spotify.com/artist/6aiCKnIN68hohzU3ZzNq48">Spotify</a></p>
+            </div>
+            <div class="encyclopedia">
+                <img src="https://static.wikia.nocookie.net/opm-music/images/5/53/MoiraDelaTorre.jpg/revision/latest?cb=20220304055257" alt="Photo of Moira dela Torre" height="300"><br>
+                <b>Moira Dela Torre</b><br>
+                <br>
+                <form>
+                    <div class="row">
+                    <div class="col"><button type="button" class="btn btn-primary" onclick="alert('Moira Dela Torre, is a Filipina singer-songwriter. She rose to fame for her covers of Imago&lsquo;s “Sundo”, Moonstar88&lsquo;s “Torete”, and the Himig Handog-winning single “Titibo-tibo”. Dela Torre&lsquo;s career started as a voice artist working on corporate jingles and theme songs. She joined the first season of The Voice of the Philippines and subsequently released her first single titled “Love Me Instead” through her debut EP album “Moira”. In October 2017, she performed in the finals of the songwriting and music video competition Himig Handog. Dela Torre&lsquo;s interpretation of the Libertine Amistoso song “Titibo-tibo” made her the grand winner. Since 2019, she is one of the judges in Idol Philippines.')">Biography</button></div>
+                    <div class="col"><button type="button" class="btn btn-primary" onclick="alert('1. Babalik Sa&lsquo;yo, 2. Kumpas, 3. Before It Sinks In, 4. Dito Ka Lang, 5. Beautiful Scars')">Top songs</button><br></div>
+                    </div>
+                </form><br>
+                <p class="reference">- Source: <a href="https://opm-music.fandom.com/wiki/Moira_Dela_Torre">OPM Music Wiki</a> and <a href="https://open.spotify.com/artist/0rZRTXEmmPmx6gt92tBqIc">Spotify</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="encyclopedia">
+                <img src="https://i.scdn.co/image/37ca3d86a7a4a47d967856e66ebd38589d7cb5e7" alt="Photo of Regine Velasquez" height="300"><br>
+                <b>Regine Velasquez</b><br>
+                <br>
+                <form>
+                    <div class="row">
+                    <div class="col"><button type="button" class="btn btn-primary" onclick="alert('Regine Velasquez is a best-selling Filipino pop singer, recording artist, record producer, and accomplished actress. In her home country, she is known as “Asia&lsquo;s Songbird” and “The Queen of Pop.” She is celebrated for her vocal range, musical diversity, and her trademark use of the belting technique. She has sold millions of records and is the best-selling artist of all time in the Philippines, with seven-million certified albums and 1.5 million certified albums throughout Asia. She has been awarded an Asian Television Award, 2 MTV Asia Awards, 18 Box Office Entertainment Awards, 16 Awit Awards, and 12 Aliw Awards.')">Biography</button></div>
+                    <div class="col"><button type="button" class="btn btn-primary" onclick="alert('1. In Love With You, 2. You Are My Song, 3. On The Wings Of Love, 4. Hanggang Ngayon, 5. Dadalhin')">Top songs</button><br></div>
+                    </div>
+                </form><br>
+                <p class="reference">- Source: <a href="https://open.spotify.com/artist/3wNylAjJX1PiCpMKx8Lrfp">Spotify</a></p>
+            </div>
+            <div class="encyclopedia">
+                <img src="https://i.scdn.co/image/ab6761670000ecd465f71c63f7f990a0b9c80aa4" alt="Photo of Lea Salonga" width="350"><br>
+                <b>Lea Salonga</b><br>
+                <br>
+                <form>
+                    <div class="row">
+                    <div class="col"><button type="button" class="btn btn-primary" onclick="alert('With a voice that&lsquo;s both warm and powerful, Lea Salonga is a Tony Award-winning singer and actress known for a lengthy stage résumé that includes originating the role of Kim in Miss Saigon. She&lsquo;s also known as the singing voice of not one but two Disney princesses (Jasmine and Mulan), and as an international recording artist with album sales in the tens of millions. A native of the Philippines, she was the first Asian woman to win a Tony Award (1991), the first Filipino to sign with an international record label (1993), and is one of the best-selling Filipino artists of all time. Still going strong well after being cast in 1998&lsquo;s Mulan, she co-starred in the Broadway revival of Once on This Island in 2017 and landed in the Top 20 of the Billboard Classical Albums chart with 2019&lsquo;s The Story of My Life: Live from Manila.')">Biography</button></div>
+                    <div class="col"><button type="button" class="btn btn-primary" onclick="alert('1. A Whole New World, 2. A Girl Worth Fighting For, 3. Reflection, 4. Honor To Us All, 5. Bayaning Tunay')">Top songs</button><br></div>
+                    </div>
+                </form><br>
+                <p class="reference">- Source: <a href="https://open.spotify.com/artist/1GlMjIezcLwV3OFlX0uXOv">Spotify</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="encyclopedia">
+                <img src="https://i.scdn.co/image/ab6761670000ecd43d77e2afba3e63d5cd8b9940" alt="Photo of Ben&Ben" width="350"><br>
+                <b>Ben&Ben</b><br>
+                <br>
+                <form>
+                    <div class="row">
+                    <div class="col"><button type="button" class="btn btn-primary" onclick="alert('Ben&Ben is an award-winning nine-piece Folk-Pop band from Manila, Philippines. Currently regarded as the biggest band in the Philippines, the band has endeared itself to many with their heartfelt lyrics, unique musicality, and their electric vibe onstage. In the prime of their youth, the band is keen on dedicating themselves to bringing richness to the music they create through songs of hope, love, and positivity. The band is composed of twin brothers Paolo Benjamin and Miguel Benjamin (acoustic guitars and vocals), Agnes Reoma (bass), Poch Barretto (electric guitar), Keifer Cabugao (violin), Pat Lasaten (keyboards), Toni Muñoz and Andrew de Pano on percussions, and Jam Villanueva (drums). Together, they have amassed more than a billion streams on Spotify alone, charting on Spotify Philippines Top 50 with 10 songs simultaneously ranking & also currently holding the record for most OPM #1s on the platform.')">Biography</button></div>
+                    <div class="col"><button type="button" class="btn btn-primary" onclick="alert('1. The Ones We Once Loved, 2. Paninindigan Kita, 3. Sa Susunod Na Habang Buhay, 4. Leaves, 5. Kathang Isip')">Top songs</button><br></div>
+                    </div>
+                </form><br>
+                <p class="reference">- Source: <a href="https://open.spotify.com/artist/4DAcJXcjX0zlQAZAPAx4Zb">Spotify</a></p>
+            </div>
+            <div class="encyclopedia">
+                <img src="https://static.wikia.nocookie.net/opm-music/images/5/5a/APO.jpg/revision/latest/scale-to-width-down/700?cb=20220308035932" alt="Photo of APO Hiking Society" height="300"><br>
+                <b>APO Hiking Society</b><br>
+                <br>
+                <form>
+                    <div class="row">
+                    <div class="col"><button type="button" class="btn btn-primary" onclick="alert('The Apolinario Mabini Hiking Society, later popularly known as APO Hiking Society, or simply APO, was a Filipino musical group. The group had its fledgling beginnings in 1969 at the Ateneo de Manila high school, with 15 members. The group&lsquo;s name was created from the acronym AMHS representing their school with a witty twist having an irreverent reference to the Philippine revolutionary intellectual and hero, Apolinario Mabini. As the students advanced into college, Danny Javier joined the group. After graduation, the majority of its members left to pursue individual careers, with only three members remaining, made up of Jim Paredes, Boboy Garovillo and Danny Javier. In the span of their professional career, Apo emerged as a principal adherent of the musical movement termed Original Pilipino Music (a.k.a. OPM), a milieu in which their original musical contributions and cultural influence became essential. The Apo became involved in record production, talent management and organizing artists under the Organisasyon ng Pilipinong Mang-aawit (O.P.M., acronym translation: “Organization of Philippine Singers/musicians”). To date, the group has released 27 albums in four decades of its career. Two hugely successful tribute albums were produced in 2006 and 2007 by its management group, featuring numerous young bands freshly reinterpreting Apo&lsquo;s expansive repertoire.')">Biography</button></div>
+                    <div class="col"><button type="button" class="btn btn-primary" onclick="alert('1. When I Met You, 2. Panalagin, 3. Ewan, 4. Batang-Bata Ka Pa, 5. Mahirap Magmahal Ng Syota Ng Iba')">Top songs</button><br></div>
+                    </div>
+                </form><br>
+                <p class="reference">- Source: <a href="https://opm-music.fandom.com/wiki/APO_Hiking_Society">OPM Music Wiki</a> and <a href="https://open.spotify.com/artist/4RA4PC3WHM9OHZLExirTcU">Spotify</a></p>
+            </div>
+        </div>
+        </div>
+
+        <hr class="border border-primary border-3 opacity-75">
+        <hr class="border border-warning border-3 opacity-75">
+        <hr class="border border-danger border-3 opacity-75">
+
+        <!--Comment box-->
+        <div class="container-fluid p-5">
+            <h2>Comments</h2>
+            <p>Ikaw, what do you think? Did you already know these artists? Did you discover a new song? Did I miss your favourites?
+                Please leave me a message below! Paalam, see you soon!
+            </p>
+            <div class="row">
+            <div class="col-6 p-5">
+            <form>
+                <textarea class="form-control" name="message" rows="10" placeholder="Leave your message here."></textarea><br>
+                <input type="button" class="btn btn-primary" onclick="commentFunction()" value="Post to board">
+            </form>
+            </div>
+            
+            <div class="col-6 p-5">
+                <i><p id="Comment">Be the first to leave a comment.</p></i>
+            </div>
+            <script>
+                function commentFunction() {
+                    document.getElementById("Comment").innerHTML = "Salamat! Thanks for leaving your comment!";
+                }
+            </script>
+            </div>
+        </div>
+    </body>
+
+    <!--References:
+    Bootstrap Team (2022): Bootstrap v5.2.2. Available at: https://getbootstrap.com/docs/5.2/getting-started/introduction/ (Accessed: 30/10/2022)
+    -->
+    
+</html>
