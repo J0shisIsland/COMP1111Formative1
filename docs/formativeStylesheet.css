@@ -9,6 +9,14 @@
     padding: 50px;
 }
 
+@media screen and (max-width: 800px) {
+    .encyclopedia {   
+      width: 100%;
+      margin: 0;
+      padding: 50px;
+    }
+  }
+
 .reference {
     font-size: smaller;
     color: lightgrey;
